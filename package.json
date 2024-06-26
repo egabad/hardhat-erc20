@@ -1,0 +1,33 @@
+{
+  "name": "hardhat-erc20",
+  "version": "1.0.0",
+  "description": "Boilerplate for ERC-20 token smart contract using Hardhat",
+  "scripts": {
+    "node": "npx hardhat node",
+    "test": "npx hardhat test",
+    "test-gas": "REPORT_GAS=true npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat ignition deploy ./ignition/modules/MyToken.ts",
+    "verify": "npx hardhat ignition verify $DEPLOYMENT_ID",
+    "deploy-verify": "npm run deploy -- --verify"
+  },
+  "keywords": [
+    "hardhat",
+    "erc20",
+    "openzeppelin",
+    "solidity"
+  ],
+  "author": "https://github.com/egabad",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
